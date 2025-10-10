@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 100%;
+}
+
+/* Header Styles */
+.Header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logoimg {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.input-bar {
+  flex: 1;
+  max-width: 400px;
+}
+
+.input_txt {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input_txt:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.input_txt::placeholder {
+  color: #999;
+}
+
+.navBar {
+  flex: 1;
+}
+
+.navBar ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navBar li {
+  color: #333;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.navBar li:hover {
+  color: #007bff;
+}
+
+.case-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.case-cards {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.case-cards:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.caseImage {
+  width: 100%;
+  overflow: hidden;
+}
+
+.caseImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.case-cards:hover .caseImage img {
+  transform: scale(1.05);
+}
+
+.body {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+.case-container {
+  display: grid;
+  width: fit-content;
+  grid-template-columns: repeat(auto-fill, minmax(3, 350px));
+
+  gap: 20px;
+} /* Case Card Styles */
+.case-cards {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.case-cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.caseImage {
+  padding: 0px 5px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.caseImage img {
+  width: 100%;
+  height: 88%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .Header {
+    padding: 1rem;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .input-bar {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .navBar ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+
+  .navBar li {
+    font-size: 0.85rem;
+  }
+  .case-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  .caseImage {
+    height: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    flex-wrap: wrap;
+  }
+
+  .input-bar {
+    max-width: 300px;
+  }
+
+  .navBar ul {
+    gap: 1.5rem;
+  }
+
+  .navBar li {
+    font-size: 0.9rem;
+  }
+}

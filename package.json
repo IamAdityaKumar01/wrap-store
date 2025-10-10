@@ -1,0 +1,28 @@
+{
+  "name": "wrap-store",
+  "version": "1.0.0",
+  "description": "wrap-store web-app",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamAdityaKumar01/wrap-store.git"
+  },
+  "author": "Aditya Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IamAdityaKumar01/wrap-store/issues"
+  },
+  "homepage": "https://github.com/IamAdityaKumar01/wrap-store#readme",
+  "dependencies": {
+    "parcel": "^2.16.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "browserslist": [
+    "last 10 version"
+  ]
+}

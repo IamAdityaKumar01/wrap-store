@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.Header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.logo {
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.logoimg {
+  object-fit: contain;
+  border-radius: 8px;
+  width: 80px;
+  height: 80px;
+}
+
+.input-bar {
+  flex: 1;
+  max-width: 400px;
+}
+
+.input_txt {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  padding: .75rem 1rem;
+  font-size: .95rem;
+  transition: border-color .3s, box-shadow .3s;
+}
+
+.input_txt:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px #007bff1a;
+}
+
+.input_txt::placeholder {
+  color: #999;
+}
+
+.navBar {
+  flex: 1;
+}
+
+.navBar ul {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  display: flex;
+}
+
+.navBar li {
+  color: #333;
+  cursor: pointer;
+  text-transform: capitalize;
+  white-space: nowrap;
+  font-size: .95rem;
+  font-weight: 500;
+  transition: color .3s;
+}
+
+.navBar li:hover {
+  color: #007bff;
+}
+
+.case-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.case-cards {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 12px;
+  transition: transform .3s, box-shadow .3s;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #00000014;
+}
+
+.caseImage {
+  width: 100%;
+  overflow: hidden;
+}
+
+.caseImage img {
+  width: 100%;
+  height: auto;
+  transition: transform .3s;
+  display: block;
+}
+
+.case-cards:hover .caseImage img {
+  transform: scale(1.05);
+}
+
+.body {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.case-container {
+  grid-template-columns: repeat(auto-fill, minmax(3px, 350px));
+  gap: 20px;
+  width: fit-content;
+  display: grid;
+}
+
+.case-cards {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 5px;
+  transition: transform .3s, box-shadow .3s;
+  overflow: hidden;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.case-cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px #00000026;
+}
+
+.caseImage {
+  width: 100%;
+  height: 200px;
+  padding: 0 5px;
+  overflow: hidden;
+}
+
+.caseImage img {
+  object-fit: cover;
+  width: 100%;
+  height: 88%;
+}
+
+@media (width <= 768px) {
+  .Header {
+    padding: 1rem;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .input-bar {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .navBar ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .navBar li {
+    font-size: .85rem;
+  }
+
+  .case-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .caseImage {
+    height: 150px;
+  }
+}
+
+@media (width <= 1024px) {
+  .logo {
+    flex-wrap: wrap;
+  }
+
+  .input-bar {
+    max-width: 300px;
+  }
+
+  .navBar ul {
+    gap: 1.5rem;
+  }
+
+  .navBar li {
+    font-size: .9rem;
+  }
+}
+/*# sourceMappingURL=wrap-store.3a01df49.css.map */
