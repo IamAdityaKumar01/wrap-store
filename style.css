@@ -26,6 +26,7 @@ body {
   display: flex;
   align-items: center;
   gap: 2rem;
+  cursor: pointer;
 }
 
 .logoimg {
@@ -57,6 +58,39 @@ body {
 
 .input_txt::placeholder {
   color: #999;
+}
+.filter-btn {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #4338ca, #2563eb);
+}
+
+.filter-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.4);
+}
+
+.filter-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .navBar {
