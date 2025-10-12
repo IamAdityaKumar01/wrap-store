@@ -193,6 +193,7 @@ body {
   height: 88%;
   object-fit: cover;
 }
+<<<<<<< HEAD
 
 .sign-btn {
   background: linear-gradient(135deg, #4f46e5, #3b82f6);
@@ -263,3 +264,5 @@ body {
 .body_input_txt::placeholder {
   color: #999;
 }
+=======
+>>>>>>> 763773485c4f6d48560b7676707f5072eebe669e
