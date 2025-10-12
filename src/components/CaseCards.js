@@ -1,7 +1,6 @@
 const CaseCards = (props) => {
   const { name, URL } = props;
-  console.log(name);
-  console.log(URL);
+
   return (
     <div className="case-cards">
       <div className="caseImage">
