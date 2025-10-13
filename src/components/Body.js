@@ -1,5 +1,5 @@
 import CaseCards from "./CaseCards";
-import cardList from "../utils/mockData";
+import { cardList } from "../utils/mockData";
 import { useState, useEffect } from "react";
 
 const Body = () => {

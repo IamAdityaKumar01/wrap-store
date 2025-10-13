@@ -1,4 +1,4 @@
-const cardList = [
+export const cardList = [
   {
     name: "SUPERHERO HYBRID HARD CASE",
     URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-HHC-CVR-768x480.webp",
@@ -61,4 +61,199 @@ const cardList = [
   },
 ];
 
-export default cardList;
+export const categoryCardList = [
+  {
+    name: "Deadpool Red Poster Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-APPLE-25-1-768x987.webp",
+    productUrl:
+      "https://wrapstore.in/product/deadpool-red-poster-hybrid-hard-case/",
+    key: 200,
+  },
+  {
+    name: "Joker Green Laugh Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-SAMSUNG-25-2-768x987.webp",
+    productUrl:
+      "https://wrapstore.in/product/joker-green-laugh-hybrid-hard-case/",
+    key: 201,
+  },
+  {
+    name: "Captain America Vs Ironman Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-PIXEL-25-3-768x987.webp",
+    productUrl:
+      "https://wrapstore.in/product/captain-america-vs-ironman-hybrid-hard-case/",
+    key: 202,
+  },
+  {
+    name: "Flash Lightning Bolt Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-ONEPLUS-25-4-768x987.webp",
+    productUrl:
+      "https://wrapstore.in/product/flash-lightning-bolt-hybrid-hard-case/",
+    key: 203,
+  },
+  {
+    name: "Daredevil Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-MOTO-25-5-768x987.webp",
+    productUrl: "https://wrapstore.in/product/daredevil-hybrid-hard-case/",
+    key: 204,
+  },
+  {
+    name: "Venom Tongue Icon Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-SAMSUNGULTRA-25-6-768x987.webp",
+    productUrl:
+      "https://wrapstore.in/product/venom-tongue-icon-hybrid-hard-case/",
+    key: 205,
+  },
+  {
+    name: "Iron Man Faceplate Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-XIAOMI-25-7-768x987.webp",
+    productUrl:
+      "https://wrapstore.in/product/iron-man-faceplate-hybrid-hard-case/",
+    key: 206,
+  },
+  {
+    name: "Hulk Smash Silhouette Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-APPLE-25-8-768x987.webp",
+    productUrl:
+      "https://wrapstore.in/product/hulk-smash-silhouette-hybrid-hard-case/",
+    key: 207,
+  },
+  {
+    name: "Batman Dark Knight Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-APPLE-25-9-768x987.webp",
+    productUrl:
+      "https://wrapstore.in/product/batman-dark-knight-hybrid-hard-case/",
+    key: 208,
+  },
+  {
+    name: "Spider-Man Web Icon Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-SAMSUNG-25-10-768x987.webp",
+    productUrl:
+      "https://wrapstore.in/product/spider-man-web-icon-hybrid-hard-case/",
+    key: 209,
+  },
+  {
+    name: "Thor Hammer Mjolnir Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-ONEPLUS-25-12-768x987.webp",
+    productUrl:
+      "https://wrapstore.in/product/thor-hammer-mjolnir-hybrid-hard-case/",
+    key: 210,
+  },
+  {
+    name: "Black Panther Wakanda Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-MOTO-25-13-768x987.webp",
+    productUrl:
+      "https://wrapstore.in/product/black-panther-wakanda-hybrid-hard-case/",
+    key: 211,
+  },
+  {
+    name: "Superman Logo Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-SAMSUNGULTRA-25-14-768x987.webp",
+    productUrl: "https://wrapstore.in/product/superman-logo-hybrid-hard-case/",
+    key: 212,
+  },
+  {
+    name: "Wonder Woman Shield Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-XIAOMI-25-15-768x987.webp",
+    productUrl:
+      "https://wrapstore.in/product/wonder-woman-shield-hybrid-hard-case/",
+    key: 213,
+  },
+  {
+    name: "Green Lantern Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-APPLE-25-16-768x987.webp",
+    productUrl: "https://wrapstore.in/product/green-lantern-hybrid-hard-case/",
+    key: 214,
+  },
+
+  {
+    name: "Batman Red & Black Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-APPLE-25-17-768x987.webp",
+    productUrl:
+      "https://wrapstore.in/product/batman-red-black-hybrid-hard-case/",
+    key: 232,
+  },
+  {
+    name: "Hulk Fist Glow Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-SAMSUNG-25-18-768x987.webp",
+    productUrl: "https://wrapstore.in/product/hulk-fist-glow-hybrid-hard-case/",
+    key: 233,
+  },
+  {
+    name: "Batman Icon Hybrid Hard Case",
+    category: "Superhero Hybrid Hard Case",
+    originalPrice: 449.0,
+    salePrice: 349.0,
+    emiPrice: 287.04,
+    URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-PIXEL-25-19-768x987.webp",
+    productUrl: "https://wrapstore.in/product/batman-icon-hybrid-hard-case/",
+    key: 234,
+  },
+];
