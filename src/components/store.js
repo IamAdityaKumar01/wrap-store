@@ -1,5 +1,5 @@
 import { categoryCardList } from "../utils/mockData";
-import StoreCaseCards from "./StoreCaseCards.js";
+import StoreCases from "./StoreCaseCards";
 import { useState } from "react";
 
 const Store = () => {
@@ -8,7 +8,7 @@ const Store = () => {
   return (
     <div className="store-container">
       {listOfCaseCards.map((obj) => (
-        <StoreCaseCards key={obj.key} props={obj} />
+        <StoreCases key={obj.key} props={obj} />
       ))}
     </div>
   );

@@ -5,8 +5,9 @@ import Body from "./components/Body";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import TermsofUse from "./components/TermsofUse";
 import Error from "./components/Error";
-import Store from "./components/store";
+import Store from "./components/Store";
 import { Outlet } from "react-router-dom";
+import CasesOptions from "./components/CasesOptions";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -33,6 +34,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/termsofuse",
         element: <TermsofUse />,
+      },
+      {
+        path: "/cases/:refId",
+        element: <CasesOptions />,
       },
     ],
     errorElement: <Error />,

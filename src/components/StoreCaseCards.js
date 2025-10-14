@@ -1,8 +1,7 @@
-const StoreCaseCards = (props) => {
+const StoreCases = (props) => {
   console.log(props.props);
   const { name, category, originalPrice, salePrice, emiPrice, URL } =
     props.props;
-
   return (
     <div className="store-cards">
       <div className="case">
@@ -19,4 +18,4 @@ const StoreCaseCards = (props) => {
   );
 };
 
-export default StoreCaseCards;
+export default StoreCases;
