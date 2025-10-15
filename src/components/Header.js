@@ -1,4 +1,4 @@
-import LOGO_IMG from "../utils/constant";
+import { LOGO_IMG } from "../utils/constant";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 

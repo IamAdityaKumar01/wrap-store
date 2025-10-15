@@ -1,7 +1,7 @@
 import CaseCards from "./CaseCards";
 import { cardList } from "../utils/mockData";
 import { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 const Body = () => {
   const [listOfCases, setListOfCases] = useState(cardList);
   const [searchText, setSearchText] = useState("");
@@ -68,7 +68,9 @@ const Body = () => {
       </div>
       <div className="case-container">
         {listOfCases.map((obj) => (
-          <CaseCards name={obj.name} URL={obj.URL} key={obj.key} />
+          <Link key={obj.key} to={"/cases/" + obj.key}>
+            <CaseCards name={obj.name} URL={obj.URL} />
+          </Link>
         ))}
       </div>
     </div>

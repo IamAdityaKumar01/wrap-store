@@ -2,62 +2,62 @@ export const cardList = [
   {
     name: "SUPERHERO HYBRID HARD CASE",
     URL: "https://wrapstore.in/wp-content/uploads/2025/09/SUP-HHC-CVR-768x480.webp",
-    key: 100,
+    key: 1,
   },
   {
     name: "ARMOUR GLASS CASE",
     URL: "https://wrapstore.in/wp-content/uploads/2025/03/GN-GL-CVR-860X538.webp",
-    key: 101,
+    key: 2,
   },
   {
     name: "LAYERED SILICONE CASE",
     URL: "https://wrapstore.in/wp-content/uploads/2025/01/SL-Cover-V2-768x480.webp",
-    key: 102,
+    key: 3,
   },
   {
     name: "HYBRID HARD CASE",
     URL: "https://wrapstore.in/wp-content/uploads/2025/03/HY-CVR-768x480.webp",
-    key: 103,
+    key: 4,
   },
   {
     name: "LAYERED CLEAR CASE",
     URL: "https://wrapstore.in/wp-content/uploads/2024/07/CL-Cover-768x480.webp",
-    key: 104,
+    key: 5,
   },
   {
     name: "STRIDE AIR CASE",
     URL: "https://wrapstore.in/wp-content/uploads/2025/03/ST-CVR-860X538.webp",
-    key: 105,
+    key: 6,
   },
   {
     name: "MARVEL EDITION",
     URL: "https://wrapstore.in/wp-content/uploads/2025/01/MRV-CoverV2-768x480.webp",
-    key: 106,
+    key: 7,
   },
   {
     name: "ANIME GLASS CASE",
     URL: "https://wrapstore.in/wp-content/uploads/2025/03/AN-GL-CVR-768x480.webp",
-    key: 107,
+    key: 8,
   },
   {
     name: "ANIME SILICONE CASE",
     URL: "https://wrapstore.in/wp-content/uploads/2024/07/ASL-Cover-768x480.webp",
-    key: 108,
+    key: 9,
   },
   {
     name: "ANIME HYBRID HARD CASE",
     URL: "https://wrapstore.in/wp-content/uploads/2025/03/AN-HY-CVR-768x480.webp",
-    key: 109,
+    key: 10,
   },
   {
     name: "ANIME STRIDE AIR CASE",
     URL: "https://wrapstore.in/wp-content/uploads/2025/02/AN-STRIDE-Cover-768x480.webp",
-    key: 110,
+    key: 11,
   },
   {
     name: "AIRPODS CASE",
     URL: "https://wrapstore.in/wp-content/uploads/2025/01/ARP-Cover-V2-768x480.webp",
-    key: 111,
+    key: 12,
   },
 ];
 
