@@ -1,23 +1,17 @@
 const TermsofUse = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-          Terms & Conditions
-        </h1>
+    <div className="terms-page">
+      <div className="terms-container">
+        <h1 className="terms-title">Terms & Conditions</h1>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Terms and Conditions
-          </h2>
-          <h3 className="text-xl font-semibold text-gray-700 mb-3">
-            Welcome to wrapstore!
-          </h3>
-          <p className="text-gray-600 mb-4">
+        <section className="terms-section">
+          <h2 className="section-heading">Terms and Conditions</h2>
+          <h3 className="section-subheading">Welcome to wrapstore!</h3>
+          <p className="section-text">
             These terms and conditions outline the rules and regulations for the
             use of intiger's Website, located at www.wrapstore.in.
           </p>
-          <p className="text-gray-600 mb-4">
+          <p className="section-text">
             The following terminology applies to these Terms and Conditions,
             Privacy Statement and Disclaimer Notice and all Agreements:
             "Client", "You" and "Your" refers to you, the person log on this
@@ -29,20 +23,17 @@ const TermsofUse = () => {
             assistance to the Client in the most appropriate manner for the
             express purpose of meeting the Client's needs in respect of
             provision of the Company's stated services, in accordance with and
-            subject to, prevailing law of India. Any use of the above
-            terminology or other words in the singular, plural, capitalization
-            and/or he/she or they, are taken as interchangeable and therefore as
-            referring to same.
+            subject to, prevailing law of India.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">Cookies</h3>
-          <p className="text-gray-600 mb-4">
+        <section className="terms-section">
+          <h3 className="section-subheading">Cookies</h3>
+          <p className="section-text">
             We employ the use of cookies. By accessing wrapstore, you agreed to
             use cookies in agreement with the intiger's Privacy Policy.
           </p>
-          <p className="text-gray-600 mb-4">
+          <p className="section-text">
             Most interactive websites use cookies to let us retrieve the user's
             details for each visit. Cookies are used by our website to enable
             the functionality of certain areas to make it easier for people
@@ -51,216 +42,138 @@ const TermsofUse = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">License</h3>
-          <p className="text-gray-600 mb-4">
+        <section className="terms-section">
+          <h3 className="section-subheading">License</h3>
+          <p className="section-text">
             Unless otherwise stated, intiger and/or its licensors own the
             intellectual property rights for all material on wrapstore. All
             intellectual property rights are reserved. You may access this from
             wrapstore for your own personal use subjected to restrictions set in
             these terms and conditions.
           </p>
-          <p className="text-gray-600 mb-2">You must not:</p>
-          <ul className="list-disc list-inside text-gray-600 mb-4 space-y-1">
+          <p className="section-text">You must not:</p>
+          <ul className="terms-list">
             <li>Republish material from wrapstore</li>
             <li>Sell, rent or sub-license material from wrapstore</li>
             <li>Reproduce, duplicate or copy material from wrapstore</li>
             <li>Redistribute content from wrapstore</li>
           </ul>
-          <p className="text-gray-600 mb-4">
+          <p className="section-text">
             This Agreement shall begin on the date hereof.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">Comments</h3>
-          <p className="text-gray-600 mb-4">
+        <section className="terms-section">
+          <h3 className="section-subheading">Comments</h3>
+          <p className="section-text">
             Parts of this website offer an opportunity for users to post and
-            exchange opinions and information in certain areas of the website.
-            intiger does not filter, edit, publish or review Comments prior to
-            their presence on the website. Comments do not reflect the views and
-            opinions of intiger, its agents and/or affiliates. Comments reflect
-            the views and opinions of the person who post their views and
-            opinions.
+            exchange opinions and information. intiger does not filter, edit,
+            publish or review Comments prior to their presence on the website.
+            Comments do not reflect the views of intiger or its affiliates.
           </p>
-          <p className="text-gray-600 mb-4">
-            intiger reserves the right to monitor all Comments and to remove any
-            Comments which can be considered inappropriate, offensive or causes
-            breach of these Terms and Conditions.
+          <p className="section-text">
+            intiger reserves the right to monitor and remove any inappropriate,
+            offensive, or unlawful Comments.
           </p>
-          <p className="text-gray-600 mb-2">You warrant and represent that:</p>
-          <ul className="list-disc list-inside text-gray-600 mb-4 space-y-1">
+          <p className="section-text">You warrant and represent that:</p>
+          <ul className="terms-list">
+            <li>You have necessary licenses and consents to post Comments</li>
+            <li>Comments do not violate any intellectual property rights</li>
             <li>
-              You are entitled to post the Comments on our website and have all
-              necessary licenses and consents to do so
+              Comments do not contain defamatory, obscene, or unlawful material
             </li>
             <li>
-              The Comments do not invade any intellectual property right,
-              including without limitation copyright, patent or trademark of any
-              third party
-            </li>
-            <li>
-              The Comments do not contain any defamatory, libelous, offensive,
-              indecent or otherwise unlawful material which is an invasion of
-              privacy
-            </li>
-            <li>
-              The Comments will not be used to solicit or promote business or
-              custom or present commercial activities or unlawful activity
+              Comments will not be used to promote unlawful or commercial
+              activity
             </li>
           </ul>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">Shipping</h3>
-          <p className="text-gray-600 mb-4">
-            Delivery time for majority of the order will be 5-7 days, order will
-            be dispatched within 2-3 business days and can take up to 3-5 days
-            for the shipping partner to deliver the order to the end user, in
-            some cases/location or due to any natural/government restrictions it
-            can take upto 2 weeks for the order delivery.
+        <section className="terms-section">
+          <h3 className="section-subheading">Shipping</h3>
+          <p className="section-text">
+            Orders are dispatched within 2–3 business days and delivered within
+            5–7 days. In some cases, due to location or natural restrictions,
+            delivery may take up to 2 weeks.
           </p>
-          <p className="text-gray-600 mb-4">
-            Product shipping and return are handled by third party vendors.
-            These services deliver business to customer logistic services. The
-            services offered are inclusive of end to end product pick up and
-            delivery.
-          </p>
-          <p className="text-gray-600 mb-4">
-            We are not affiliated to any shipping providers nor we endorse any
-            actions, fundamental beliefs, ideologies or business practices. We
-            are not liable to any actions or damage caused by our third party
-            vendors.
+          <p className="section-text">
+            Shipping and return services are handled by third-party vendors. We
+            are not responsible for their actions or delays.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">
-            Replacement/Return
-          </h3>
-          <p className="text-gray-600 mb-4">
+        <section className="terms-section">
+          <h3 className="section-subheading">Replacement / Return</h3>
+          <p className="section-text">
             Refunds are applicable only where product/phone model is not
             available with us.
           </p>
-          <p className="text-gray-600 mb-4">
-            For all other scenarios replacement is applicable. User has to
-            submit us proper proofs (Image/video) to show/highlight the issue in
-            the received products, once proper proofs are submitted, it can take
-            up-to 2 weeks for a replacements to be processed, user will be keeps
-            notified and informed during all this process and once approved from
-            are team replacements will be sent to user.
-          </p>
-          <p className="text-gray-600 mb-4">
-            Replacements are valid only in case of wrong, damaged or defective
-            product is received, although the replacements are free including
-            the shipping and handling charges though in some cases depending
-            upon the situation user can be asked to pay for the shipping and
-            handling charges.
+          <p className="section-text">
+            For other cases, replacements are applicable upon valid proof
+            (images/videos). Processing may take up to 2 weeks after approval.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">
-            Cancellation
-          </h3>
-          <p className="text-gray-600 mb-4">
-            Cancellation is only allowed before 8 AM of the next morning after
-            placing the order, after successful cancelation of orders complete
-            amount will be refunded back to user. After 8 AM next morning orders
-            can not be cancelled as they are forwarded for the manufacturing
-            process.
+        <section className="terms-section">
+          <h3 className="section-subheading">Cancellation</h3>
+          <p className="section-text">
+            Cancellation is allowed only before 8 AM of the next morning after
+            placing the order. After that, orders cannot be cancelled as they
+            enter manufacturing.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">Refund</h3>
-          <p className="text-gray-600 mb-4">
-            Refund is allowed only in case where we are not able to
-            fulfill/process the order, complete amount will be refunded back to
-            user original payment source in 2-4 working days.
+        <section className="terms-section">
+          <h3 className="section-subheading">Refund</h3>
+          <p className="section-text">
+            Refunds apply only when we are unable to process the order. The full
+            amount is refunded to the original payment source within 2–4 working
+            days.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">
-            Warranty Policy
-          </h3>
-          <p className="text-gray-600 mb-4">
-            This Limited Warranty covers any defects in material or workmanship
-            under normal use during the Warranty Period. During the Warranty
-            Period, Wrapstore will replace, at no charge (excludes shipping that
-            has to be paid by the customer), parts of a product that proves
-            defective because of improper material or workmanship, under normal
-            use and maintenance.
+        <section className="terms-section">
+          <h3 className="section-subheading">Warranty Policy</h3>
+          <p className="section-text">
+            Wrapstore provides a 1-year limited warranty covering manufacturing
+            defects under normal use. Shipping for replacement is borne by the
+            customer.
           </p>
-          <p className="text-gray-600 mb-4">
-            The Warranty Period for Physical Goods purchased from wrapstore is 1
-            year from the date of purchase. A replacement Physical Good or part
-            assumes the remaining warranty of the original Physical Good or 1
-            year from the date of purchase of original product.
-          </p>
-          <p className="text-gray-600 mb-2">
-            This Limited Warranty does not cover any problem that is caused by:
-          </p>
-          <ul className="list-disc list-inside text-gray-600 mb-4 space-y-1">
-            <li>
-              Conditions, malfunctions or damage not resulting from defects in
-              material or workmanship
-            </li>
-            <li>Damage from fire or exposure to excessive heat</li>
-            <li>Wear and tear of product</li>
-            <li>Not in original state</li>
+          <ul className="terms-list">
+            <li>Defects due to misuse or heat exposure are not covered</li>
+            <li>Normal wear and tear is excluded</li>
+            <li>Warranty applies to original state only</li>
           </ul>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">
-            Disclaimer
-          </h3>
-          <p className="text-gray-600 mb-4">
-            To the maximum extent permitted by applicable law, we exclude all
-            representations, warranties and conditions relating to our website
-            and the use of this website. Nothing in this disclaimer will limit
-            or exclude our or your liability for death or personal injury, limit
-            or exclude our or your liability for fraud or fraudulent
-            misrepresentation, limit any of our or your liabilities in any way
-            that is not permitted under applicable law, or exclude any of our or
-            your liabilities that may not be excluded under applicable law.
-          </p>
-          <p className="text-gray-600 mb-4">
-            As long as the website and the information and services on the
-            website are provided free of charge, we will not be liable for any
-            loss or damage of any nature.
+        <section className="terms-section">
+          <h3 className="section-subheading">Disclaimer</h3>
+          <p className="section-text">
+            To the fullest extent permitted by law, Wrapstore disclaims all
+            warranties and conditions related to this website. We are not liable
+            for any damages arising from its use.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">
-            Contact Us
-          </h3>
-          <p className="text-gray-600 mb-2">
-            If you have any questions about these Terms & Conditions, you can
-            contact us:
+        <section className="terms-section">
+          <h3 className="section-subheading">Contact Us</h3>
+          <p className="section-text">
+            For any questions about these Terms & Conditions, contact us:
           </p>
-          <ul className="list-disc list-inside text-gray-600 space-y-1">
-            <li>By email: support@wrapstore.in</li>
+          <ul className="terms-list">
+            <li>Email: support@wrapstore.in</li>
             <li>
-              By visiting:{" "}
-              <a
-                href="https://wrapstore.in/contact-us/"
-                className="text-blue-600 hover:underline"
-              >
+              Website:{" "}
+              <a href="https://wrapstore.in/contact-us/" className="terms-link">
                 https://wrapstore.in/contact-us/
               </a>
             </li>
-            <li>By Whatsapp Bot number: +918851001871</li>
+            <li>WhatsApp Bot: +91 8851001871</li>
           </ul>
         </section>
 
-        <div className="mt-8 pt-6 border-t border-gray-200 text-center">
-          <p className="text-sm text-gray-500">
-            Last updated: January 31, 2024
-          </p>
+        <div className="terms-footer">
+          <p>Last updated: January 31, 2024</p>
         </div>
       </div>
     </div>

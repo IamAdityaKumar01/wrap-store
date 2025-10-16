@@ -347,18 +347,16 @@ body {
   margin-top: auto;
 }
 
-/* The main container for all shimmer cards */
 .shimmer-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem; /* Adjust gap to match your original page layout */
+  gap: 2rem;
   justify-content: center;
   padding: 1rem;
 }
 
-/* Styles for a single shimmer card placeholder */
 .shimmer-card {
-  width: 220px; /* Adjust to match your product card width */
+  width: 220px;
   border: 1px solid #e7e7e7;
   border-radius: 8px;
   background-color: #fff;
@@ -366,23 +364,20 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Placeholder for the product image */
 .shimmer-image {
   width: 100%;
-  height: 230px; /* Adjust to match your image height */
+  height: 230px;
   background-color: #f0f0f0;
   border-radius: 6px;
   margin-bottom: 1rem;
 }
 
-/* Container for text placeholders */
 .shimmer-details {
   display: flex;
   flex-direction: column;
-  gap: 8px; /* Space between the text lines */
+  gap: 8px;
 }
 
-/* Placeholder for a line of text */
 .shimmer-line {
   width: 100%;
   height: 16px;
@@ -390,15 +385,12 @@ body {
   border-radius: 4px;
 }
 
-/* This class applies the animation to all shimmer elements */
 .shimmer-animate {
-  /* The gradient that sweeps across */
   background: linear-gradient(to right, #f0f0f0 8%, #e0e0e0 18%, #f0f0f0 33%);
-  background-size: 1200px 100%; /* A large background size to make the gradient smooth */
+  background-size: 1200px 100%;
   animation: shimmer 1.5s infinite linear;
 }
 
-/* The keyframe animation */
 @keyframes shimmer {
   0% {
     background-position: -1200px 0;
@@ -406,4 +398,122 @@ body {
   100% {
     background-position: 1200px 0;
   }
+}
+
+.terms-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f0e8 0%, #faf7f2 100%);
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.terms-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 100px,
+    rgba(218, 200, 165, 0.08) 100px,
+    rgba(218, 200, 165, 0.08) 200px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.terms-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 60px 80px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+}
+
+.terms-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.terms-section {
+  margin-bottom: 45px;
+}
+
+.section-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #3a3a3a;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #d4c5a0;
+}
+
+.section-subheading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 16px;
+  margin-top: 28px;
+}
+
+.section-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #5a5a5a;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.terms-list {
+  margin: 20px 0;
+  padding-left: 30px;
+}
+
+.terms-list li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #5a5a5a;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.terms-list li::marker {
+  color: #a89268;
+}
+
+.terms-link {
+  color: #8b7355;
+  text-decoration: none;
+  border-bottom: 1px solid #d4c5a0;
+  transition: all 0.3s ease;
+}
+
+.terms-link:hover {
+  color: #6d5a43;
+  border-bottom-color: #8b7355;
+}
+
+.terms-footer {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 2px solid #e8e0d0;
+  text-align: center;
+}
+
+.terms-footer p {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
 }
