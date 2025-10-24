@@ -517,3 +517,30 @@ body {
   color: #888;
   font-style: italic;
 }
+.status-txt {
+  border: 2px solid black;
+  padding: 0.2em;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.line-status.online {
+  width: 12px;
+  height: 12px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  display: inline-block;
+  bottom: 4px;
+  right: 4px;
+  margin-left: 0.3em;
+}
+
+.line-status.offline {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  bottom: 4px;
+  right: 4px;
+  margin-left: 0.3em;
+}

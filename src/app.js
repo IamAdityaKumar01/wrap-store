@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -8,9 +8,11 @@ import Error from "./components/Error";
 import Store from "./components/Store";
 import { Outlet } from "react-router-dom";
 import CasesOptions from "./components/CasesOptions";
+import Shimmer from "./components/Shimmer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+const Categories = lazy(() => import("./components/Categories"));
 const AppLayout = () => (
   <div className="container">
     <Header />
@@ -30,6 +32,20 @@ const appRouter = createBrowserRouter([
       {
         path: "/store",
         element: <Store />,
+      },
+      {
+        path: "/categories",
+        element: (
+          <Suspense
+            fallback={
+              <h1>
+                <Shimmer />
+              </h1>
+            }
+          >
+            <Categories />
+          </Suspense>
+        ),
       },
       {
         path: "/termsofuse",

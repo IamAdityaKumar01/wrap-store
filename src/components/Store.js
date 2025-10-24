@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const Store = () => {
   let [listOfCaseCards, setlistOfCaseCards] = useState(categoryCardList);
-
   return (
     <div className="store-container">
       {listOfCaseCards.map((obj) => (

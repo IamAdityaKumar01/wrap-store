@@ -1,12 +1,18 @@
 import { LOGO_IMG } from "../utils/constant";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import useOnlineStatus from "../utils/useOnlineStatus";
 const Header = () => {
   const [btnName, setBtnName] = useState("sign in");
   useEffect(() => {
     console.log("useEffect Called");
   }, [btnName]);
+
+  const status = useOnlineStatus();
+  let status_txt = "online";
+  if (status === false) {
+    status_txt = "offline";
+  }
   return (
     <div className="Header">
       <div className="logo">
@@ -22,12 +28,19 @@ const Header = () => {
           ></input>
         </div>
 
+        <div className="status-txt">
+          {status_txt}
+          <div className={`line-status ${status_txt}`}></div>
+        </div>
+
         <div className="navBar">
           <ul>
             <li>
               <Link to="/store">store</Link>
             </li>
-            <li>categories</li>
+            <Link to="/categories">
+              <li>categories</li>
+            </Link>
             <li>FAQ's</li>
             <li>My Account</li>
             <li>

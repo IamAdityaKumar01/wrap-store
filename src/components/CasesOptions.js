@@ -2,10 +2,16 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
 import useCasesOptions from "../utils/useCasesOptions";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const CasesOptions = () => {
   const { refId } = useParams();
   let caseInfo = useCasesOptions(refId);
+  const onlineStatus = useOnlineStatus();
+  if (onlineStatus === false) {
+    return <h1>Looks like you are offline..</h1>;
+  }
+
   if (caseInfo === null) {
     return <Shimmer />;
   }
