@@ -39,7 +39,7 @@ const Body = () => {
             Anime
           </button>
         </div>
-        <div className="search-box flex justify-center border border-gray-300 bg-gray-50 py-0.1">
+        <div className="search-box flex justify-center border border-gray-300 bg-gray-50 py-0.1 ">
           <button
             className="s-btn pl-5 pr-3 cursor-pointer"
             onClick={() => {
@@ -77,7 +77,7 @@ const Body = () => {
           ></input>
         </div>
       </div>
-      <div className="case-container flex flex-wrap justify-between px-10 pt-7">
+      <div className="case-container grid grid-cols-3 auto-rows-auto gap-4 px-10 pt-7">
         {listOfCases.map((obj) => (
           <Link key={obj.key} to={"/cases/" + obj.key}>
             <CaseCards name={obj.name} URL={obj.URL} />
