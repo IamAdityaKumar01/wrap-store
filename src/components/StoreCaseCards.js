@@ -8,7 +8,7 @@ const StoreCases = (props) => {
         <img className="case-image w-80 h-auto" src={URL} />
       </div>
       <div className="case-details flex flex-col gap-0 justify-center items-center">
-        <h2 className="emi-price bg-green-600 text-white rounded-lg px-1 py-0.1 text-sm font-bold ">
+        <h2 className="emi-price bg-green-600 text-white rounded-lg px-1 py-0.1 text-sm font-bold">
           Get it as low as ${emiPrice}*
         </h2>
         <h2 className="text-sm font-bold my-4.5">SELECT MODEL INSIDE</h2>

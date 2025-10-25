@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { MdSearch } from "react-icons/md";
+
 const Body = () => {
   const [listOfCases, setListOfCases] = useState(cardList);
   const [searchText, setSearchText] = useState("");
