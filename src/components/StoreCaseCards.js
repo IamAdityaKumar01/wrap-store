@@ -1,7 +1,6 @@
 const StoreCases = (props) => {
   const { name, category, originalPrice, salePrice, emiPrice, URL } =
     props.props;
-  console.log(props);
 
   return (
     <div className="store-cards w-90 pb-2 h-auto border border-gray-200 rounded-xl mb-2.5">

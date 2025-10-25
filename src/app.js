@@ -7,7 +7,7 @@ import TermsofUse from "./components/TermsofUse";
 import Error from "./components/Error";
 import Store from "./components/Store";
 import { Outlet } from "react-router-dom";
-import CasesOptions from "./components/CasesOptions";
+import CaseCardsOptions from "./components/CaseCardsOptions";
 import Shimmer from "./components/Shimmer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -53,7 +53,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/cases/:refId",
-        element: <CasesOptions />,
+        element: <CaseCardsOptions />,
       },
     ],
     errorElement: <Error />,
