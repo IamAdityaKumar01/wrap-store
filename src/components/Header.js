@@ -10,7 +10,10 @@ const Header = () => {
   }, [btnName]);
 
   return (
-    <div className="flex justify-between py-6 px-1 shadow-lg">
+    <div
+      className="flex justify-between py-6 px-1 shadow-lg  [&_a:hover]:text-yellow-700 [&_button:hover]:text-green-700 
+                transition-colors duration-300"
+    >
       <div className="flex items-center w-33">
         <Link to="/">
           <img className="logoimg" src={LOGO_IMG} />
@@ -27,7 +30,7 @@ const Header = () => {
 
       <div className="flex items-center">
         <ul className="flex gap-x-10">
-          <li>
+          <li className="">
             <Link to="/store">store</Link>
           </li>
           <Link to="/categories">
@@ -42,9 +45,9 @@ const Header = () => {
             <FaShoppingCart className="text-black-700 w-5 h-5" />
           </li>
           <li>
-            <div className="mr-9 ">
+            <div className="mr-9 ml-5">
               <button
-                className="m-0 pl-5"
+                className="transition-all duration-300 ease-in-out min-w-[80px]"
                 onClick={() =>
                   btnName == "sign out"
                     ? setBtnName("sign in")

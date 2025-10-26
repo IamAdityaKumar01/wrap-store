@@ -1,5 +1,4 @@
 const CategoriesCards = ({ props }) => {
-  console.log(props);
   const { title, rating, price, discountPercentage, thumbnail, brand } = props;
   const actualPrice = price;
   const discountP = discountPercentage;
@@ -9,9 +8,9 @@ const CategoriesCards = ({ props }) => {
   );
 
   return (
-    <div className="cat-cases w-90 pb-2 h-auto border border-gray-200 rounded-xl mb-2.5">
+    <div className="cat-cases w-90 h-auto border border-gray-200 rounded-xl mb-0 p-2">
       <img className="case-image w-80 h-80" src={thumbnail} />
-      <div className="case-content flex flex-col gap-0 justify-center items-center">
+      <div className="case-content flex flex-col gap-0.5 justify-center items-center">
         <h2 className="brand-name rounded-lg px-1 py-0.1 text-sm font-medium">
           {brand}
         </h2>
@@ -31,6 +30,19 @@ const CategoriesCards = ({ props }) => {
       </div>
     </div>
   );
+};
+
+export const WithBestRating = (CategoriesCards) => {
+  return (prop) => {
+    return (
+      <div>
+        <label className="absolute bg-red-400 text-white rounded-lg px-1 ml-1 mt-1">
+          Best Rated
+        </label>
+        <CategoriesCards {...prop} />
+      </div>
+    );
+  };
 };
 
 export default CategoriesCards;

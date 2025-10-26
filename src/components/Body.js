@@ -19,7 +19,7 @@ const Body = () => {
       <div className="filter-container flex gap-10 px-10 pt-6">
         <div className="home-btn flex justify-center">
           <button
-            className="h-btn px-3 py-2 bg-green-200 rounded-xl cursor-pointer"
+            className="h-btn px-3 py-2 bg-green-300 rounded-lg cursor-pointer text-gray-900 hover:text-green-100 hover:bg-green-500 transition-colors duration-300"
             onClick={() => {
               setListOfCases(cardList);
             }}
@@ -29,7 +29,7 @@ const Body = () => {
         </div>
         <div className="filter-btn flex justify-center">
           <button
-            className="f-btn px-3 py-2 bg-green-200 rounded-xl cursor-pointer"
+            className="f-btn px-3 py-2 bg-green-300 rounded-lg cursor-pointer text-gray-900 hover:text-green-100 hover:bg-green-500 transition-colors duration-300"
             onClick={() => {
               const filteredList = listOfCases.filter((c) =>
                 c.name.includes("ANIME")
