@@ -22,8 +22,7 @@
     "react-icons": "^5.5.0",
     "react-router": "^7.9.4",
     "react-router-dom": "^6.30.1",
-    "tailwind": "^2.3.1",
-    "@parcel/rust-linux-x64-gnu": "^2.12.0"
+    "tailwind": "^2.3.1"
   },
   "browserslist": [
     "last 10 version"
@@ -37,5 +36,9 @@
     "stream-http": "^3.2.0",
     "tailwindcss": "^4.1.16",
     "url": "^0.11.4"
+  },
+  "optionalDependencies": {
+    "@parcel/watcher-linux-x64-glibc": "2.4.1",
+    "@parcel/rust-linux-x64-gnu": "2.12.0"
   }
 }
