@@ -2,19 +2,23 @@ import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
 import useCasesOptions from "../utils/useCasesOptions";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import CaseCardsOptionsAccordion from "./CaseCardsOptionsAccordion";
 
 const CaseCardsOptions = () => {
-  console.log("CasesOptions Called");
   const { refId } = useParams();
-  let caseInfo = useCasesOptions(refId);
+  const [caseInfo, caseAccordionInfo] = useCasesOptions(refId);
+  console.log("I am getting called");
+
   const onlineStatus = useOnlineStatus();
+
   if (onlineStatus === false) {
     return <h1>Looks like you are offline..</h1>;
   }
 
-  if (caseInfo === null) {
-    return <Shimmer />;
+  if (caseInfo === null || caseAccordionInfo == null) {
+    return <h1>Loading...</h1>;
   }
+
   const { title, category, price, discountPercentage, thumbnail, brand } =
     caseInfo;
 
@@ -26,17 +30,31 @@ const CaseCardsOptions = () => {
   );
 
   return (
-    <div className="store-container">
-      <div className="case">
-        <img className="case-image" src={thumbnail} />
-        <h2 className="emi-price">{brand}</h2>
-        <h2>SELECT MODEL INSIDE</h2>
-        <h2 className="Price">
-          $<span className="orignal-Price">{actualPrice}</span> $
-          {discountedPrice}
+    <div className="store-container flex flex-col gap-7 justify-center items-center">
+      <div className="case border border-gray-500 p-2 m-2 flex flex-col justify-center items-center gap-2">
+        <img className="case-image border border-gray-100" src={thumbnail} />
+        <h2 className="brand-name bg-green-500 rounded-lg text-white px-2 font-bold">
+          {brand}
         </h2>
-        {<h2 className="case-name">{title} </h2>}
-        {<h3 className="category">{category}</h3>}
+        <h2 className="bg-gray-300 rounded-sm text-white px-2 font-bold text-gray-950">
+          SELECT MODEL INSIDE
+        </h2>
+        <h2 className="Price">
+          <span className=" line-through font-medium text-emerald-400">
+            ${actualPrice}
+          </span>{" "}
+          <span className="sale-price font-bold text-emerald-700">
+            ${discountedPrice}
+          </span>
+        </h2>
+        {<h2 className="case-name font-medium">{title} </h2>}
+        {<h3 className="category text-gray-400">{category}</h3>}
+      </div>
+
+      <div className="AccordianCards flex flex-col items-center gap-4 w-full mb-10">
+        {caseAccordionInfo.posts.map((elem) => (
+          <CaseCardsOptionsAccordion key={elem.id} {...elem} />
+        ))}
       </div>
     </div>
   );
