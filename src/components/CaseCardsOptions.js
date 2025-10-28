@@ -3,11 +3,11 @@ import { useParams } from "react-router-dom";
 import useCasesOptions from "../utils/useCasesOptions";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import CaseCardsOptionsAccordion from "./CaseCardsOptionsAccordion";
+import { useState } from "react";
 
 const CaseCardsOptions = () => {
   const { refId } = useParams();
   const [caseInfo, caseAccordionInfo] = useCasesOptions(refId);
-  console.log("I am getting called");
 
   const onlineStatus = useOnlineStatus();
 
@@ -36,7 +36,7 @@ const CaseCardsOptions = () => {
         <h2 className="brand-name bg-green-500 rounded-lg text-white px-2 font-bold">
           {brand}
         </h2>
-        <h2 className="bg-gray-300 rounded-sm text-white px-2 font-bold text-gray-950">
+        <h2 className="bg-gray-300 rounded-sm px-2 font-bold">
           SELECT MODEL INSIDE
         </h2>
         <h2 className="Price">
@@ -51,10 +51,12 @@ const CaseCardsOptions = () => {
         {<h3 className="category text-gray-400">{category}</h3>}
       </div>
 
-      <div className="AccordianCards flex flex-col items-center gap-4 w-full mb-10">
-        {caseAccordionInfo.posts.map((elem) => (
-          <CaseCardsOptionsAccordion key={elem.id} {...elem} />
-        ))}
+      <div className="AccordianCards flex flex-col items-center gap-4 w-6/12 mb-10 justify-center">
+        <div className="w-full">
+          {caseAccordionInfo.posts.map((elem) => (
+            <CaseCardsOptionsAccordion key={elem.id} {...elem} />
+          ))}
+        </div>
       </div>
     </div>
   );

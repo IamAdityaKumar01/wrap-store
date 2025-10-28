@@ -1,16 +1,28 @@
+import { useState } from "react";
+
 const CaseCardsOptionsAccordion = (props) => {
-  console.log(props);
-  console.log(props.reactions.likes);
+  let [showItems, setShowItems] = useState(false);
+
+  function handleClick(e) {
+    console.log(e);
+    setShowItems(!showItems);
+  }
+
   return (
-    <div className="AccordianCards w-6/12 bg-gray-200 flex flex-col backdrop:shadow-lg px-4 py-2 rounded-lg">
-      <div className="header flex justify-between items-center w-full">
+    <div className="AccordianCards w-full bg-gray-100 flex flex-col shadow-xl px-4 py-2 rounded-lg mb-4">
+      <div
+        onClick={handleClick}
+        className="header flex justify-between w-full cursor-pointer select-none"
+      >
         <span className="title text-gray-800">{props.title}</span>{" "}
-        <span>^</span>
+        <span>{showItems ? "🔽" : "🔼"}</span>
       </div>
-      <div className="body flex justify-center m-2 gap-2">
-        <span>👍: {props.reactions.likes}</span>
-        <span>👎: {props.reactions.dislikes}</span>
-      </div>
+      {showItems && (
+        <div className="body flex justify-center m-2 gap-2">
+          <span>👍: {props.reactions.likes}</span>
+          <span>👎: {props.reactions.dislikes}</span>
+        </div>
+      )}
     </div>
   );
 };
