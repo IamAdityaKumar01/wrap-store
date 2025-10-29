@@ -58,8 +58,8 @@ const CaseCardsOptions = () => {
             <CaseCardsOptionsAccordion
               key={elem.id}
               {...elem}
-              showItems={index == showIndex ? true : false}
-              setIndex={() => setShowIndex(index)}
+              showItems={index === showIndex}
+              setIndex={() => setShowIndex(showIndex === index ? null : index)}
             />
           ))}
         </div>
