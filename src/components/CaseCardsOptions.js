@@ -6,6 +6,7 @@ import CaseCardsOptionsAccordion from "./CaseCardsOptionsAccordion";
 import { useState } from "react";
 
 const CaseCardsOptions = () => {
+  const [showIndex, setShowIndex] = useState(null);
   const { refId } = useParams();
   const [caseInfo, caseAccordionInfo] = useCasesOptions(refId);
 
@@ -53,8 +54,13 @@ const CaseCardsOptions = () => {
 
       <div className="AccordianCards flex flex-col items-center gap-4 w-6/12 mb-10 justify-center">
         <div className="w-full">
-          {caseAccordionInfo.posts.map((elem) => (
-            <CaseCardsOptionsAccordion key={elem.id} {...elem} />
+          {caseAccordionInfo.posts.map((elem, index) => (
+            <CaseCardsOptionsAccordion
+              key={elem.id}
+              {...elem}
+              showItems={index == showIndex ? true : false}
+              setIndex={() => setShowIndex(index)}
+            />
           ))}
         </div>
       </div>
