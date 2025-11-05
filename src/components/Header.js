@@ -2,7 +2,7 @@ import { LOGO_IMG } from "../utils/constant";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
-
+import { MdSearch } from "react-icons/md";
 const Header = () => {
   const [btnName, setBtnName] = useState("sign in");
   useEffect(() => {
@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div
       className="flex justify-between py-6 px-1 shadow-lg  [&_a:hover]:text-yellow-700 [&_button:hover]:text-green-700 
-                transition-colors duration-300"
+                transition-colors duration-300 w-12/12"
     >
       <div className="flex items-center w-33">
         <Link to="/">
@@ -20,13 +20,16 @@ const Header = () => {
         </Link>
       </div>
 
-      {/* <div className="search-bar">
+      <div className="search-box flex border border-gray-300 bg-gray-50 py-0.1 w-4/12">
+        <button className="s-btn pl-5 pr-3 cursor-pointer">
+          <MdSearch size={22} className="text-gray-600" />
+        </button>
         <input
           type="text"
-          className="p-4 w-150 border border-b-rose-600"
-          placeholder="Search for products..."
+          className="i-box py-2 flex-grow outline-none bg-gray-50 h-11"
+          placeholder="Search"
         ></input>
-      </div> */}
+      </div>
 
       <div className="flex items-center">
         <ul className="flex gap-x-10">
