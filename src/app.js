@@ -1,4 +1,5 @@
 import { Suspense, lazy } from "react";
+import FAQ from "./components/FAQ";
 import "./index.css";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
@@ -40,6 +41,10 @@ const appRouter = createBrowserRouter([
             <Categories />
           </Suspense>
         ),
+      },
+      {
+        path: "/FAQ",
+        element: <FAQ />,
       },
       {
         path: "/termsofuse",

@@ -7,7 +7,6 @@ import { MdSearch } from "react-icons/md";
 
 const Body = () => {
   const [listOfCases, setListOfCases] = useState(cardList);
-  const [searchText, setSearchText] = useState("");
 
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false) {

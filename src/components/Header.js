@@ -39,7 +39,9 @@ const Header = () => {
           <Link to="/categories">
             <li>categories</li>
           </Link>
-          <li>FAQ's</li>
+          <Link to="/FAQ">
+            <li>FAQ's</li>
+          </Link>
           <li>My Account</li>
           <li>
             <Link to="/termsofUse">Terms of Use</Link>
