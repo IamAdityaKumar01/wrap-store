@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div
       className="flex justify-between py-6 px-1 shadow-lg  [&_a:hover]:text-yellow-700 [&_button:hover]:text-green-700 
-                transition-colors duration-300 w-12/12"
+                transition-colors duration-300 w-12/12 select-none"
     >
       <div className="flex items-center w-33">
         <Link to="/">
@@ -51,16 +51,18 @@ const Header = () => {
           </li>
           <li>
             <div className="mr-9 ml-5">
-              <button
-                className="transition-all duration-300 ease-in-out min-w-[80px]"
-                onClick={() =>
-                  btnName == "sign out"
-                    ? setBtnName("sign in")
-                    : setBtnName("sign out")
-                }
-              >
-                {btnName}
-              </button>
+              <Link to="/login">
+                <button
+                  className="transition-all duration-300 ease-in-out min-w-[80px]"
+                  onClick={() =>
+                    btnName == "sign out"
+                      ? setBtnName("sign in")
+                      : setBtnName("sign out")
+                  }
+                >
+                  {btnName}
+                </button>
+              </Link>
             </div>
           </li>
         </ul>

@@ -10,6 +10,7 @@ import Error from "./components/Error";
 import Store from "./components/Store";
 import { Outlet } from "react-router-dom";
 import CaseCardsOptions from "./components/CaseCardsOptions";
+import Login from "./components/Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -29,6 +30,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/",
         element: <Body />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
       {
         path: "/store",
