@@ -1,12 +1,21 @@
 import CaseCards from "./CaseCards";
 import { cardList } from "../utils/mockData";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { MdSearch } from "react-icons/md";
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
   const [listOfCases, setListOfCases] = useState(cardList);
+  let data = useContext(UserContext);
+  let { inputVal, setInputVal } = data;
+  useEffect(() => {
+    const filteredList2 = cardList.filter((c) =>
+      c.name.toLowerCase().includes(inputVal.toLowerCase())
+    );
+    setListOfCases(filteredList2);
+  }, [inputVal]);
 
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false) {

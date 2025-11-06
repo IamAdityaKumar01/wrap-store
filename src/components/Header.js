@@ -3,8 +3,13 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { MdSearch } from "react-icons/md";
+import { useContext } from "react";
+import UserContext from "../utils/UserContext";
 const Header = () => {
-  let [inputVal, setInputVal] = useState("");
+  let data = useContext(UserContext);
+  console.log(data);
+  let { setVal, setInputVal } = data;
+
   return (
     <div
       className="flex justify-between py-6 px-1 shadow-lg  [&_a:hover]:text-yellow-700 [&_button:hover]:text-green-700 

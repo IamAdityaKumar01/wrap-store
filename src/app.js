@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import FAQ from "./components/FAQ";
+import { useState } from "react";
 import "./index.css";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
@@ -12,16 +13,22 @@ import { Outlet } from "react-router-dom";
 import CaseCardsOptions from "./components/CaseCardsOptions";
 import Login from "./components/Login";
 import Shimmer from "./components/Shimmer";
+import UserContext from "./utils/UserContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const Categories = lazy(() => import("./components/Categories"));
-const AppLayout = () => (
-  <div className="container">
-    <Header />
-    <Outlet />
-  </div>
-);
+const AppLayout = () => {
+  let [inputVal, setInputVal] = useState("");
+  return (
+    <div className="container">
+      <UserContext.Provider value={{ inputVal, setInputVal }}>
+        <Header />
+        <Outlet />
+      </UserContext.Provider>
+    </div>
+  );
+};
 
 const appRouter = createBrowserRouter([
   {
