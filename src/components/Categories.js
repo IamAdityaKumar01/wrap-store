@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import CategoriesCards, { WithBestRating } from "./CategoriesCards";
-
+import Shimmer from "./Shimmer";
 const Categories = () => {
   let [phoneList, setPhoneList] = useState(null);
   useEffect(() => {
@@ -17,7 +17,7 @@ const Categories = () => {
   }
 
   if (phoneList == null) {
-    return <h1>loading..</h1>;
+    return <Shimmer />;
   }
   const BestRatingCards = WithBestRating(CategoriesCards);
   return (

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import FAQAcc from "./FAQAcc";
+import Shimmer from "./Shimmer";
 
 const FAQ = () => {
   let [accData, setAccData] = useState(null);
@@ -8,16 +9,15 @@ const FAQ = () => {
   useEffect(() => {
     fetchData();
   }, []);
+
   async function fetchData() {
     let data = await fetch("https://dummyjson.com/posts?limit=5");
     let json = await data.json();
-
     setAccData(json);
-    console.log(json);
   }
 
   if (accData == null) {
-    return;
+    return <Shimmer />;
   }
   return (
     <div className="FAQ-Container w-full  bg-gradient-to-b from-gray-50 to-gray-100 flex flex-wrap justify-center gap-8 p-6 md:p-10 select-none">

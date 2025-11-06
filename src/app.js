@@ -11,6 +11,7 @@ import Store from "./components/Store";
 import { Outlet } from "react-router-dom";
 import CaseCardsOptions from "./components/CaseCardsOptions";
 import Login from "./components/Login";
+import Shimmer from "./components/Shimmer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -42,7 +43,7 @@ const appRouter = createBrowserRouter([
       {
         path: "/categories",
         element: (
-          <Suspense fallback={<h1>Wait</h1>}>
+          <Suspense fallback={<Shimmer />}>
             <Categories />
           </Suspense>
         ),

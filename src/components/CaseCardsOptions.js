@@ -4,6 +4,7 @@ import useCasesOptions from "../utils/useCasesOptions";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import CaseCardsOptionsAccordion from "./CaseCardsOptionsAccordion";
 import { useState } from "react";
+import Shimmer from "./Shimmer";
 
 const CaseCardsOptions = () => {
   const [showIndex, setShowIndex] = useState(null);
@@ -17,7 +18,7 @@ const CaseCardsOptions = () => {
   }
 
   if (caseInfo === null || caseAccordionInfo == null) {
-    return <h1>Loading...</h1>;
+    return <Shimmer />;
   }
 
   const { title, category, price, discountPercentage, thumbnail, brand } =
@@ -32,8 +33,11 @@ const CaseCardsOptions = () => {
 
   return (
     <div className="store-container flex flex-col gap-7 justify-center items-center">
-      <div className="case border border-gray-500 p-2 m-2 flex flex-col justify-center items-center gap-2">
-        <img className="case-image border border-gray-100" src={thumbnail} />
+      <div className="case border border-gray-500 p-2 m-2 flex flex-col justify-center items-center gap-2 h-max">
+        <img
+          className="case-image border border-gray-100 w-full object-cover h-64"
+          src={thumbnail}
+        />
         <h2 className="brand-name bg-green-500 rounded-lg text-white px-2 font-bold">
           {brand}
         </h2>
