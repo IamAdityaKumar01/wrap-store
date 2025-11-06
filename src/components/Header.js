@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { MdSearch } from "react-icons/md";
 const Header = () => {
-  const [btnName, setBtnName] = useState("sign in");
-  useEffect(() => {
-    console.log("useEffect Called");
-  }, [btnName]);
-
+  let [inputVal, setInputVal] = useState("");
   return (
     <div
       className="flex justify-between py-6 px-1 shadow-lg  [&_a:hover]:text-yellow-700 [&_button:hover]:text-green-700 
@@ -28,6 +24,9 @@ const Header = () => {
           type="text"
           className="i-box py-2 flex-grow outline-none bg-gray-50 h-11"
           placeholder="Search"
+          onChange={(e) => {
+            setInputVal(e.target.value);
+          }}
         ></input>
       </div>
 
@@ -52,15 +51,8 @@ const Header = () => {
           <li>
             <div className="mr-9 ml-5">
               <Link to="/login">
-                <button
-                  className="transition-all duration-300 ease-in-out min-w-[80px]"
-                  onClick={() =>
-                    btnName == "sign out"
-                      ? setBtnName("sign in")
-                      : setBtnName("sign out")
-                  }
-                >
-                  {btnName}
+                <button className="transition-all duration-300 ease-in-out min-w-[80px]">
+                  Login
                 </button>
               </Link>
             </div>

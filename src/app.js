@@ -32,10 +32,7 @@ const appRouter = createBrowserRouter([
         path: "/",
         element: <Body />,
       },
-      {
-        path: "/login",
-        element: <Login />,
-      },
+
       {
         path: "/store",
         element: <Store />,
@@ -62,6 +59,10 @@ const appRouter = createBrowserRouter([
       },
     ],
     errorElement: <Error />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 
