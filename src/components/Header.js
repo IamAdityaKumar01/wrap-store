@@ -14,8 +14,8 @@ const Header = () => {
   console.log(cart);
   return (
     <div
-      className="flex justify-between py-6 px-1 shadow-lg  [&_a:hover]:text-yellow-700 [&_button:hover]:text-green-700 
-                transition-colors duration-300 w-12/12 select-none"
+      className="sticky top-0 z-50 bg-white flex justify-between py-6 px-1 shadow-lg [&_a:hover]:text-yellow-700 [&_button:hover]:text-green-700 
+            transition-colors duration-300 w-full select-none"
     >
       <div className="flex items-center w-33">
         <Link to="/">
@@ -57,7 +57,9 @@ const Header = () => {
               <div className="cart">
                 <FaShoppingCart className="cart-logo text-black-700 w-6 h-6" />
                 <div className="bg-green-400 items-count absolute -top-6 -right-6 rounded-full m-2">
-                  <span className="w-1 h-1 p-2 rounded-full text-white">2</span>
+                  <span className="w-1 h-1 p-2 rounded-full text-white">
+                    {cart.length}
+                  </span>
                 </div>
               </div>
             </li>

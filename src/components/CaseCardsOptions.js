@@ -4,6 +4,8 @@ import useCasesOptions from "../utils/useCasesOptions";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import CaseCardsOptionsAccordion from "./CaseCardsOptionsAccordion";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addItem } from "../utils/cartSlice";
 
 const CaseCardsOptions = () => {
   const [showIndex, setShowIndex] = useState(null);
@@ -11,6 +13,10 @@ const CaseCardsOptions = () => {
   const [caseInfo, caseAccordionInfo] = useCasesOptions(refId);
 
   const onlineStatus = useOnlineStatus();
+  const dispatch = useDispatch();
+  function cartHandler(caseInfoDetail) {
+    dispatch(addItem(caseInfoDetail));
+  }
 
   if (onlineStatus === false) {
     return (
@@ -80,6 +86,9 @@ const CaseCardsOptions = () => {
               <button
                 type="button"
                 className="mt-4 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+                onClick={() => {
+                  cartHandler(caseInfo);
+                }}
               >
                 Add to Cart
               </button>
