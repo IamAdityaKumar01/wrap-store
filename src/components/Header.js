@@ -7,7 +7,6 @@ import { useContext } from "react";
 import UserContext from "../utils/UserContext";
 const Header = () => {
   let data = useContext(UserContext);
-  console.log(data);
   let { setVal, setInputVal } = data;
 
   return (
@@ -50,9 +49,11 @@ const Header = () => {
           <li>
             <Link to="/termsofUse">Terms of Use</Link>
           </li>
-          <li>
-            <FaShoppingCart className="text-black-700 w-5 h-5" />
-          </li>
+          <Link to="/cart">
+            <li>
+              <FaShoppingCart className="text-black-700 w-5 h-5" />
+            </li>
+          </Link>
           <li>
             <div className="mr-9 ml-5">
               <Link to="/login">

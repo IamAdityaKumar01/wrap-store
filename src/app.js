@@ -1,4 +1,5 @@
 import { Suspense, lazy } from "react";
+import Cart from "./components/Cart";
 import FAQ from "./components/FAQ";
 import { useState } from "react";
 import "./index.css";
@@ -38,6 +39,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/",
         element: <Body />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
 
       {
