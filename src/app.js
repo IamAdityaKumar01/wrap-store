@@ -17,6 +17,7 @@ import Shimmer from "./components/Shimmer";
 import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const Categories = lazy(() => import("./components/Categories"));

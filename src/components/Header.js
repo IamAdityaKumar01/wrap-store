@@ -5,10 +5,13 @@ import { FaShoppingCart } from "react-icons/fa";
 import { MdSearch } from "react-icons/md";
 import { useContext } from "react";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
+
 const Header = () => {
   let data = useContext(UserContext);
   let { setVal, setInputVal } = data;
-
+  const cart = useSelector((store) => store.cart.items);
+  console.log(cart);
   return (
     <div
       className="flex justify-between py-6 px-1 shadow-lg  [&_a:hover]:text-yellow-700 [&_button:hover]:text-green-700 
@@ -50,8 +53,13 @@ const Header = () => {
             <Link to="/termsofUse">Terms of Use</Link>
           </li>
           <Link to="/cart">
-            <li>
-              <FaShoppingCart className="text-black-700 w-5 h-5" />
+            <li className="relative flex items-center justify-center">
+              <div className="cart">
+                <FaShoppingCart className="cart-logo text-black-700 w-6 h-6" />
+                <div className="bg-green-400 items-count absolute -top-6 -right-6 rounded-full m-2">
+                  <span className="w-1 h-1 p-2 rounded-full text-white">2</span>
+                </div>
+              </div>
             </li>
           </Link>
           <li>

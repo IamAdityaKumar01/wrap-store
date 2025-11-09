@@ -37,7 +37,7 @@ const CaseCardsOptions = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-8 px-4 mt-3">
       <div className="max-w-4xl mx-auto space-y-8">
         <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300">
           <div className="p-6 md:p-8">
