@@ -15,7 +15,8 @@ import CaseCardsOptions from "./components/CaseCardsOptions";
 import Login from "./components/Login";
 import Shimmer from "./components/Shimmer";
 import UserContext from "./utils/UserContext";
-
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const Categories = lazy(() => import("./components/Categories"));
@@ -23,10 +24,12 @@ const AppLayout = () => {
   let [inputVal, setInputVal] = useState("");
   return (
     <div className="container">
-      <UserContext.Provider value={{ inputVal, setInputVal }}>
-        <Header />
-        <Outlet />
-      </UserContext.Provider>
+      <Provider store={appStore}>
+        <UserContext.Provider value={{ inputVal, setInputVal }}>
+          <Header />
+          <Outlet />
+        </UserContext.Provider>
+      </Provider>
     </div>
   );
 };
