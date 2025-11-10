@@ -11,7 +11,7 @@ const Header = () => {
   let data = useContext(UserContext);
   let { setVal, setInputVal } = data;
   const cart = useSelector((store) => store.cart.items);
-  console.log(cart);
+
   return (
     <div
       className="sticky top-0 z-50 bg-white flex justify-between py-6 px-1 shadow-lg [&_a:hover]:text-yellow-700 [&_button:hover]:text-green-700 
