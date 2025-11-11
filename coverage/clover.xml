@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1762855621536" clover="3.2.0">
+  <project timestamp="1762855621536" name="All files">
+    <metrics statements="7" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="1" elements="13" coveredelements="6" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
+    <file name="Login.js" path="C:\Users\way2a\wrap-store\src\components\Login.js">
+      <metrics statements="7" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="1"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="29" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
